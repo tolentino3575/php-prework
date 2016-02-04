@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+        <title>Appointment Scheduler</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Schedule an appointment with us... If you dare</h1>
+            <form action="appointment.php">
+                <div class="form-group">
+                    <label for="name">Enter your name</label>
+                    <input id="name" name="name" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="date">What date would you like to schedule?</label>
+                    <input id="date" name="date" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="start">What time would you like to schedule your appointment?</label>
+                    <input id="start" name="start" class="form-control" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="end">Please enter an end time in increments of 30 min</label>
+                    <input id="end" name="end" class="form-control" type="text">
+                </div>
+
+                <button class="btn btn-danger">Schedule!</button>
+
+            </form>
+    </body>
+</html>
