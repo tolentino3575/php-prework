@@ -4,11 +4,11 @@
     $third = $_GET["third"];
     $jumbledString = jumble($first, $second, $third);
 
-    function jumble($first, $second, $third)
+    function jumble($dog, $cat, $bird)
     {
-        $reverse = strrev($first);
-        $capital = strtoupper($second);
-        $reverseTwo = strrev($third);
+        $reverse = strrev($dog);
+        $capital = strtoupper($cat);
+        $reverseTwo = strrev($bird);
         $capitalTwo = strtoupper($reverseTwo);
         $newString = $reverse . $capital . $capitalTwo;
         return $newString;
