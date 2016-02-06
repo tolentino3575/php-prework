@@ -7,6 +7,8 @@
     {
         if ($guessed_number == $winning_number){
             return "CONGRATS!!!! YOU WIN NOTHING! YOU LOSE! GOOD DAY SIR!";
+        } elseif (($guessed_number < 1) || ($guessed_number > 20)) {
+            return "That's not between 1 and 20";
         } elseif ($guessed_number < $winning_number){
             return "Too low too slow";
         } else {
